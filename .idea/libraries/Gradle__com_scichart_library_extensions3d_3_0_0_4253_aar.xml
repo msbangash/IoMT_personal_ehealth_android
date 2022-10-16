@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scichart.library:extensions3d:3.0.0.4253@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f19644c3238030eed7f6d7377b3820c/jetified-extensions3d-3.0.0.4253/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f19644c3238030eed7f6d7377b3820c/jetified-extensions3d-3.0.0.4253/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f19644c3238030eed7f6d7377b3820c/jetified-extensions3d-3.0.0.4253/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scichart.library/extensions3d/3.0.0.4253/2ff140a89d49f6142b376cf9776da196c5753cdd/extensions3d-3.0.0.4253-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

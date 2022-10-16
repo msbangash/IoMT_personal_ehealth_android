@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PersonalEhealth</string>
+    <string name="get_location">Get Location</string>
+    <string name="get_sensors">Device Sensors</string>
+    <string name="don_t_have_account">Don’t have account?<b><font color="#ff9052"> Register</font></b></string>
+    <string name="already_account">Already have account?<b><font color="#ff9052"> Sign In</font></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="waiting">Waiting..</string>
+    <string name="cancel">cancel</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/internal">
+
+    <fragment
+        android:id="@+id/internal"
+        android:name="com.example.personalehealth.internalsensors.InternalSensorFragment"
+        android:label="fragment_internal_sensor"
+        tools:layout="@layout/fragment_internal_sensor" />
+    <fragment
+        android:id="@+id/external"
+        android:name="com.example.personalehealth.externalsensors.ExternalSensorFragment"
+        android:label="fragment_external_sensor"
+        tools:layout="@layout/fragment_external_sensor" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.personalehealth.database.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/cloud"
+        android:name="com.example.personalehealth.cloud.CloudFragment"
+        android:label="fragment_cloud"
+        tools:layout="@layout/fragment_cloud" />
+</navigation>

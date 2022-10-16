@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_style"
+    android:elevation="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/linear"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/createdAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02/02/2022 1:00 pm"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:background="@color/color_primary"/>
+
+</LinearLayout>
