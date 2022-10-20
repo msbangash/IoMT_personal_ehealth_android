@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234900799202",
+    "project_id": "personalehealth-ac37f",
+    "storage_bucket": "personalehealth-ac37f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234900799202:android:24a66f3799e8c70a33e8bb",
+        "android_client_info": {
+          "package_name": "com.example.personalehealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234900799202-etrkbl70liis6624bhn59rb41n10h0or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVrgrGQtVXoewFabWnEiIPV6PTXVHmX9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234900799202-etrkbl70liis6624bhn59rb41n10h0or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
