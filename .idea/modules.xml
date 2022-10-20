@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalEhealth.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalEhealth.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PersonalEhealth.app.unitTest.iml" />
     </modules>
   </component>
 </project>

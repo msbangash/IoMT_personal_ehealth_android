@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hannesa2:paho.mqtt.android:3.3.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f95830150fdcd3a8a5b4c68537a7bdb1/jetified-paho.mqtt.android-3.3.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f95830150fdcd3a8a5b4c68537a7bdb1/jetified-paho.mqtt.android-3.3.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f95830150fdcd3a8a5b4c68537a7bdb1/jetified-paho.mqtt.android-3.3.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hannesa2/paho.mqtt.android/3.3.5/d889e0c9b42865c9aa67b9fa188b4131070c7d52/paho.mqtt.android-3.3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

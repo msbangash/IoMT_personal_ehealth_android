@@ -1,20 +1,26 @@
 package com.example.personalehealth.externalsensors;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.pm.PackageManager;
 import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.app.ActivityCompat;
+
 import com.androidplot.util.Redrawer;
 import com.androidplot.xy.AdvancedLineAndPointRenderer;
 import com.androidplot.xy.BoundaryMode;
+import com.androidplot.xy.StepMode;
 import com.androidplot.xy.XYPlot;
 import com.androidplot.xy.XYSeries;
 import com.bitalino.comm.BITalinoDevice;
@@ -26,6 +32,7 @@ import com.example.personalehealth.utils.Utilities;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.ref.WeakReference;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -36,10 +43,11 @@ import roboguice.inject.InjectView;
 
 public class BitalinoActivity extends RoboActivity {
 
-    private XYPlot plot,plot2;
+    private XYPlot plot, plot2;
+    private TextView text_reading,textecgdata;
     private static final String TAG = "BitalinoActivity";
     private static final boolean UPLOAD = false;
-    private Redrawer redrawer,redrawer2;
+    private Redrawer redrawer, redrawer2;
     BITalinoFrame[] frames;
     public BITalinoDevice bitalino;
     int[] arrayECg;
@@ -66,8 +74,22 @@ public class BitalinoActivity extends RoboActivity {
         setContentView(R.layout.activity_bitalino);
 
         // initialize our XYPlot reference:
-        plot = (XYPlot) findViewById(R.id.plot);
-        plot2 = (XYPlot) findViewById(R.id.plot2);
+       plot = (XYPlot) findViewById(R.id.plot);
+//        plot2 = (XYPlot) findViewById(R.id.plot2);
+        text_reading = (TextView) findViewById(R.id.text_reading);
+
+      plot.setDomainBoundaries(0, 30, BoundaryMode.FIXED);
+       plot.setRangeBoundaries(0, 2, BoundaryMode.FIXED);
+        plot.setRangeStep(StepMode.INCREMENT_BY_VAL, 1);
+       plot.setDomainStep(StepMode.INCREMENT_BY_VAL, 5);
+//        plot2.setRangeBoundaries(0, 800, BoundaryMode.FIXED);
+//        plot2.setDomainBoundaries(0, 30, BoundaryMode.FIXED);
+//        plot2.setRangeStep(StepMode.INCREMENT_BY_VAL, 200);
+//        plot2.setDomainStep(StepMode.INCREMENT_BY_VAL, 5);
+//
+//
+        plot.setLinesPerRangeLabel(5);
+//        plot2.setLinesPerRangeLabel(10);
         // execute
         if (!testInitiated)
             new TestAsyncTask().execute();
@@ -78,11 +100,17 @@ public class BitalinoActivity extends RoboActivity {
             try {
                 bitalino.stop();
                 double ecg = calculateAverage(arrayECg);
-                int ppg = (int) calculateAverage(arrayPPg);
-                Utilities.saveString(getApplicationContext(),"ecg",String.valueOf(ecg));
-                Utilities.saveString(getApplicationContext(),"ppg",String.valueOf(ppg));
+            //  int ppg = (int) calculateAverage(arrayPPg);
+                Utilities.saveString(getApplicationContext(), "ecg", String.valueOf(ecg));
+             //   Utilities.saveString(getApplicationContext(), "ppg", String.valueOf(ppg));
                 Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
-                finish();
+
+                text_reading.setText(Html.fromHtml(
+                        "<font color='#ff9052'><b>ECG :</b>" + ecg + "<br></font>"
+                ));
+
+
+//                finish();
 
             } catch (BITalinoException e) {
                 e.printStackTrace();
@@ -124,13 +152,14 @@ public class BitalinoActivity extends RoboActivity {
                  * .html#cancelDiscovery()
                  */
                 Log.d(TAG, "Stopping Bluetooth discovery.");
+
                 btAdapter.cancelDiscovery();
 
                 sock = dev.createRfcommSocketToServiceRecord(MY_UUID);
                 sock.connect();
                 testInitiated = true;
 
-                bitalino = new BITalinoDevice(10000, new int[]{0, 1, 2, 3, 4, 5});
+                bitalino = new BITalinoDevice(100, new int[]{0, 1, 2, 3, 4, 5});
                 publishProgress("Connecting to BITalino [" + remoteDevice + "]..");
                 bitalino.open(sock.getInputStream(), sock.getOutputStream());
                 publishProgress("Connected.");
@@ -144,7 +173,7 @@ public class BitalinoActivity extends RoboActivity {
                 // read until task is stopped
                 int counter = 0;
                 while (counter < 100) {
-                    final int numberOfSamplesToRead = 10000;
+                    final int numberOfSamplesToRead = 100;
                     publishProgress("Reading samples..");
                     frames = bitalino.read(numberOfSamplesToRead);
 
@@ -174,53 +203,33 @@ public class BitalinoActivity extends RoboActivity {
 
                     for (int i = 0; i < frames.length; i++) {
 
-                        int analog = frames[0].getAnalog(5);
+                        int analog = frames[i].getAnalog(0);
 
                         arrayECg[i] = analog;
                     }
+                  ECGModel ecgSeries = new ECGModel(arrayECg.length, 20);
 
-
-                     arrayPPg = new int[frames.length];
-
-                    for (int i = 0; i < frames.length; i++) {
-
-                        int analog = frames[0].getAnalog(4);
-
-                        arrayPPg[i] = analog;
-                    }
-
-
-
-                    ECGModel ecgSeries = new ECGModel(arrayECg.length, 200);
-                    ECGModel ppgSerires = new ECGModel(arrayPPg.length,200);
                     // add a new series' to the xyplot:
                     MyFadeFormatter formatter = new MyFadeFormatter(2000);
                     formatter.setLegendIconEnabled(false);
                     plot.addSeries(ecgSeries, formatter);
-                    plot.setRangeBoundaries(0, 2, BoundaryMode.FIXED);
-                    plot.setDomainBoundaries(0, 500, BoundaryMode.FIXED);
+//
+//
+//
+//                    // add a new series' to the xyplot:
 
-
-                    // add a new series' to the xyplot:
-                    MyFadeFormatter formatter1 = new MyFadeFormatter(2000);
-                    formatter1.setLegendIconEnabled(false);
-                    plot2.addSeries(ppgSerires, formatter1);
-                    plot2.setRangeBoundaries(0, 60, BoundaryMode.FIXED);
-                    plot2.setDomainBoundaries(0, 500, BoundaryMode.FIXED);
-
-
-
-                    // reduce the number of range labels
-                    plot.setLinesPerRangeLabel(5);
-                    plot2.setLinesPerRangeLabel(10);
-
-                    // start generating ecg data in the background:
+//
+//
+//
+//
+//                    // reduce the number of range labels
+//
+//
+//                    // start generating ecg data in the background:
                     ecgSeries.start(new WeakReference<>(plot.getRenderer(AdvancedLineAndPointRenderer.class)));
-                    ppgSerires.start(new WeakReference<>(plot2.getRenderer(AdvancedLineAndPointRenderer.class)));
 
-                    // set a redraw rate of 30hz and start immediately:
+//                    // set a redraw rate of 30hz and start immediately:
                     redrawer = new Redrawer(plot, 70, true);
-                    redrawer2 = new Redrawer(plot2, 70, true);
 
 
 
@@ -389,7 +398,7 @@ public class BitalinoActivity extends RoboActivity {
     public void onStop() {
         super.onStop();
         redrawer.finish();
-        redrawer2.finish();
+
     }
     private double calculateAverage(int[] marks) {
         Integer sum = 0;

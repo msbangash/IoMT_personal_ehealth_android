@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.personalehealth.R;
 import com.example.personalehealth.ui.model.User;
 import com.example.personalehealth.utils.Utilities;
+//import com.google.android.gms.tasks.OnCompleteListener;
+//import com.google.android.gms.tasks.Task;
+//import com.google.firebase.auth.AuthResult;
+//import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.database.DataSnapshot;
+//import com.google.firebase.database.DatabaseError;
+//import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.ValueEventListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,9 +38,10 @@ import java.util.Objects;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
-    private FirebaseAuth auth;
+     private FirebaseAuth auth;
     private Button btnLogin;
     KProgressHUD hud;
+    private TextView tv_forget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +49,28 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login_activty);
 
         initializeViews();
+        tv_forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = inputEmail.getText().toString();
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else{
+                    FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(getApplicationContext(), "Email To Reset Password Has Send To "+email, Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
+                }
 
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +94,7 @@ public class LoginActivity extends AppCompatActivity {
                         .setAnimationSpeed(2)
                         .setDimAmount(0.5f)
                         .show();
+                auth =FirebaseAuth.getInstance();
                 //authenticate user
                 auth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
@@ -87,9 +119,22 @@ public class LoginActivity extends AppCompatActivity {
                                                     assert user != null;
                                                     String firstName = user.getFirstName();
                                                     String lastName = user.getLastName();
+                                                    String userId = user.getId();
+                                                    String email = user.getEmail();
+                                                    String dob = user.getDob();
+                                                    String age = user.getAge();
+                                                    String gender = user.getGender();
+                                                    String phone = user.getPhone();
 
-                                                    Utilities.saveString(getApplicationContext(), "firstName", firstName);
-                                                    Utilities.saveString(getApplicationContext(), "lastName", lastName);
+
+                                                    Utilities.saveString(LoginActivity.this,"firstName",firstName);
+                                                    Utilities.saveString(LoginActivity.this,"lastName",lastName);
+                                                    Utilities.saveString(LoginActivity.this,"userId",userId);
+                                                    Utilities.saveString(LoginActivity.this,"email",email);
+                                                    Utilities.saveString(LoginActivity.this,"dob",dob);
+                                                    Utilities.saveString(LoginActivity.this,"age",age);
+                                                    Utilities.saveString(LoginActivity.this,"phone",phone);
+                                                    Utilities.saveString(LoginActivity.this,"gender",gender);
                                                     Toast.makeText(getApplicationContext(), firstName + " " + lastName, Toast.LENGTH_SHORT).show();
 
                                                 }
@@ -116,7 +161,8 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.et_email);
         inputPassword = findViewById(R.id.et_password);
         btnLogin = findViewById(R.id.btn_signin);
-        auth = FirebaseAuth.getInstance();
+        tv_forget = findViewById(R.id.tv_forget);
+//        auth = FirebaseAuth.getInstance();
     }
 
     public void gotoRegister(View view) {

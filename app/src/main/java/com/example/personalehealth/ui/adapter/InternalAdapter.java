@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.personalehealth.weatherupdate.WeatherFragment;
 import com.example.personalehealth.internalsensors.devices.ScanDeviceFragment;
 import com.example.personalehealth.internalsensors.location.LocationFragment;
 import com.example.personalehealth.internalsensors.pulse.PulseFragment;
@@ -29,6 +30,7 @@ public class InternalAdapter extends FragmentPagerAdapter {
             case 1:
                 ScanDeviceFragment deviceFragment = new ScanDeviceFragment();
                 return deviceFragment;
+
             case 2:
                 PulseFragment pulseFragment = new PulseFragment();
                 return pulseFragment;

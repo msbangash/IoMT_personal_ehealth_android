@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.scichart.library:core:3.0.0.4253@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b131ce1e6548b3d46786633a6d04f03/jetified-core-3.0.0.4253/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b131ce1e6548b3d46786633a6d04f03/jetified-core-3.0.0.4253/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b131ce1e6548b3d46786633a6d04f03/jetified-core-3.0.0.4253/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f250d8728f741076fddd4a25398f2c0a/jetified-core-3.0.0.4253/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f250d8728f741076fddd4a25398f2c0a/jetified-core-3.0.0.4253/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f250d8728f741076fddd4a25398f2c0a/jetified-core-3.0.0.4253/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scichart.library/core/3.0.0.4253/3d496658c2935bce83b529533c28c44ad1e69495/core-3.0.0.4253-javadoc.jar!/" />

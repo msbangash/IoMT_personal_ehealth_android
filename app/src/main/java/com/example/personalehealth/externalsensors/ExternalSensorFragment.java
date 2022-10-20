@@ -39,7 +39,7 @@ import roboguice.inject.InjectView;
 
 public class ExternalSensorFragment extends Fragment {
 
-    Button button;
+    Button button,button2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,12 +53,19 @@ public class ExternalSensorFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_external_sensor, container, false);
 
-        button = view.findViewById(R.id.btn_reading);
+        button = view.findViewById(R.id.ecg_btn_reading);
+        button2 = view.findViewById(R.id.ppg_btn_reading);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), BitalinoActivity.class));
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PpgActivity.class));
             }
         });
         return view;

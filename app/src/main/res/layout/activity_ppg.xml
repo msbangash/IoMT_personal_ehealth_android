@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/stop"
+        android:clickable="false"
+        android:editable="false"
+        android:enabled="false"
+        android:singleLine="false"
+        android:text="@string/waiting" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:onClick="save"
+        android:text="save &amp; stop" />
+
+    <TextView
+        android:id="@+id/text_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="PPG reading"
+
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/plot2"
+            style="@style/APDefacto.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/plot"
+            ap:domainTitle="time"
+            ap:rangeTitle="range"
+            ap:renderMode="use_background_thread"
+            ap:title="PPG" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

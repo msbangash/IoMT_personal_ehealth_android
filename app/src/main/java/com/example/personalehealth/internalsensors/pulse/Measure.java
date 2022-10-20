@@ -256,7 +256,7 @@ public class Measure extends AppCompatActivity implements SurfaceHolder.Callback
                 }
                 int beatsAvg = (beatsArrayAvg / beatsArrayCnt);
 
-                Toast t = Toast.makeText(c, String.valueOf(beatsAvg), Toast.LENGTH_LONG);
+                Toast t = Toast.makeText(c, String.valueOf(beatsAvg)+"heart rate is", Toast.LENGTH_LONG);
                 t.show();
 
                 Utilities.saveString(c,"pulse",String.valueOf(beatsAvg));

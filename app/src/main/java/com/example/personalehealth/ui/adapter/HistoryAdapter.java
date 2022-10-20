@@ -45,8 +45,13 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, HistoryDetailActivity.class);
+                intent.putExtra("item_id", arrayList.get(position).getU_id());
                 intent.putExtra("item_fname", arrayList.get(position).getFirstName());
                 intent.putExtra("item_lname", arrayList.get(position).getLastName());
+                intent.putExtra("item_dob", arrayList.get(position).getDob());
+                intent.putExtra("item_age", arrayList.get(position).getAge());
+                intent.putExtra("item_phone", arrayList.get(position).getPhone());
+                intent.putExtra("item_gender", arrayList.get(position).getGender());
                 intent.putExtra("item_address", arrayList.get(position).getAddress());
                 intent.putExtra("item_locality", arrayList.get(position).getLocality());
                 intent.putExtra("item_country", arrayList.get(position).getCountryName());
@@ -55,6 +60,11 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
                 intent.putExtra("item_pulse", arrayList.get(position).getPulse());
                 intent.putExtra("item_ecg", arrayList.get(position).getEcg());
                 intent.putExtra("item_ppg", arrayList.get(position).getPpg());
+                intent.putExtra("item_temperature", arrayList.get(position).getTemperature());
+                intent.putExtra("item_weather", arrayList.get(position).getWeatherTitle());
+                intent.putExtra("item_pressure", arrayList.get(position).getPressure());
+                intent.putExtra("item_humidity", arrayList.get(position).getHumidity());
+                intent.putExtra("item_des", arrayList.get(position).getDescription());
                 context.startActivity(intent);
             }
         });

@@ -14,9 +14,14 @@ public class History {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
+    private String u_id;
     private String firstName;
 
     private String lastName;
+    private String dob;
+    private String age;
+    private String phone;
+    private String gender;
 
     private String latitude;
 
@@ -36,9 +41,20 @@ public class History {
 
     private String createdAt;
 
-    public History(String firstName, String lastName, String latitude, String longitude, String countryName, String locality, String address, String pulse, String ecg, String ppg, String createdAt) {
+    private String weatherTitle;
+    private String description;
+    private String temperature;
+    private String pressure;
+    private String humidity;
+
+    public History(String u_id,String firstName, String lastName, String dob, String age, String phone, String gender, String latitude, String longitude, String countryName, String locality, String address, String pulse, String ecg, String ppg, String createdAt, String weatherTitle, String description, String temperature, String pressure, String humidity) {
+        this.u_id = u_id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.dob = dob;
+        this.age = age;
+        this.phone = phone;
+        this.gender = gender;
         this.latitude = latitude;
         this.longitude = longitude;
         this.countryName = countryName;
@@ -48,6 +64,91 @@ public class History {
         this.ecg = ecg;
         this.ppg = ppg;
         this.createdAt = createdAt;
+        this.weatherTitle = weatherTitle;
+        this.description = description;
+        this.temperature = temperature;
+        this.pressure = pressure;
+        this.humidity = humidity;
+    }
+
+    public String getU_id() {
+        return u_id;
+    }
+
+    public void setU_id(String u_id) {
+        this.u_id = u_id;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getWeatherTitle() {
+        return weatherTitle;
+    }
+
+    public void setWeatherTitle(String weatherTitle) {
+        this.weatherTitle = weatherTitle;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+
+    public String getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(String humidity) {
+        this.humidity = humidity;
     }
 
     public String getCreatedAt() {

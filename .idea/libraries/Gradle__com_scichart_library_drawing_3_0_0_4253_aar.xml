@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.scichart.library:drawing:3.0.0.4253@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd9dbd2ca113b557f69fb81f7f7694ae/jetified-drawing-3.0.0.4253/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd9dbd2ca113b557f69fb81f7f7694ae/jetified-drawing-3.0.0.4253/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd9dbd2ca113b557f69fb81f7f7694ae/jetified-drawing-3.0.0.4253/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e8633c2694ed669c2996d86f6e8d237e/jetified-drawing-3.0.0.4253/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e8633c2694ed669c2996d86f6e8d237e/jetified-drawing-3.0.0.4253/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e8633c2694ed669c2996d86f6e8d237e/jetified-drawing-3.0.0.4253/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scichart.library/drawing/3.0.0.4253/b3c7ddcb16825412afffca60cc46529ee322321e/drawing-3.0.0.4253-javadoc.jar!/" />

@@ -16,6 +16,11 @@
         android:label="fragment_external_sensor"
         tools:layout="@layout/fragment_external_sensor" />
     <fragment
+        android:id="@+id/weather"
+        android:name="com.example.personalehealth.weatherupdate.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
         android:id="@+id/history"
         android:name="com.example.personalehealth.database.HistoryFragment"
         android:label="fragment_history"
@@ -25,4 +30,5 @@
         android:name="com.example.personalehealth.cloud.CloudFragment"
         android:label="fragment_cloud"
         tools:layout="@layout/fragment_cloud" />
+
 </navigation>

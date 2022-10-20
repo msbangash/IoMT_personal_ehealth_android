@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.kaopiz:kprogresshud:1.2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3066a0c4e76fdc7e15d3195c30c61651/jetified-kprogresshud-1.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3066a0c4e76fdc7e15d3195c30c61651/jetified-kprogresshud-1.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3066a0c4e76fdc7e15d3195c30c61651/jetified-kprogresshud-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/61c9891ead6b78e720228b013131f70c/jetified-kprogresshud-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/61c9891ead6b78e720228b013131f70c/jetified-kprogresshud-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/61c9891ead6b78e720228b013131f70c/jetified-kprogresshud-1.2.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kaopiz/kprogresshud/1.2.0/19e35775be188511ec306ee2d0a63d766893643f/kprogresshud-1.2.0-javadoc.jar!/" />

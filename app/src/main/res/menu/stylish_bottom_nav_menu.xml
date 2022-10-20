@@ -6,21 +6,27 @@
         android:enabled="true"
         android:icon="@drawable/ic_internal"
         android:iconTint="@color/white"
-        android:title="Internal Sensor"
+        android:title="Internal"
         />
     <item
         android:id="@+id/external"
         android:enabled="true"
         android:iconTint="@color/white"
         android:icon="@drawable/ic_external"
-        android:title="External Sensor"
+        android:title="External"
         />
+    <item
+        android:id="@+id/weather"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@drawable/weather"
+        android:title="Weather" />
     <item
         android:id="@+id/history"
         android:enabled="true"
         android:iconTint="@color/white"
         android:icon="@drawable/ic_history"
-        android:title="History" />
+        android:title="Profile" />
     <item
         android:id="@+id/cloud"
         android:enabled="true"

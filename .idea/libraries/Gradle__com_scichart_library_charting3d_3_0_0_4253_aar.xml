@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.scichart.library:charting3d:3.0.0.4253@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5182f53565ccb0cff80945d5839f70ed/jetified-charting3d-3.0.0.4253/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5182f53565ccb0cff80945d5839f70ed/jetified-charting3d-3.0.0.4253/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5182f53565ccb0cff80945d5839f70ed/jetified-charting3d-3.0.0.4253/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2f721be5e1c12bdff928276ed72a3dc/jetified-charting3d-3.0.0.4253/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2f721be5e1c12bdff928276ed72a3dc/jetified-charting3d-3.0.0.4253/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2f721be5e1c12bdff928276ed72a3dc/jetified-charting3d-3.0.0.4253/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scichart.library/charting3d/3.0.0.4253/443d5a0448f9f4b21fe561917a9c592f1b29ac15/charting3d-3.0.0.4253-javadoc.jar!/" />

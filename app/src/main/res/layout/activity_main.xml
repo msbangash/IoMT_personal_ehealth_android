@@ -10,7 +10,7 @@
         android:id="@+id/user_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/vendor_bottom_navigaitaon"
         android:layout_marginBottom="@dimen/_40sdp"
         android:clipChildren="false"

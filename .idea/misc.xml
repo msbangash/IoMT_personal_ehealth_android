@@ -31,10 +31,31 @@
         <entry key="..\:/PersonalEhealth/app/src/main/res/layout/fragment_scan_device.xml" value="0.18802083333333333" />
         <entry key="..\:/PersonalEhealth/app/src/main/res/layout/rv_history.xml" value="0.22" />
         <entry key="..\:/PersonalEhealth/app/src/main/res/menu/stylish_bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/drawable/et_style.xml" value="0.2455" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_bitalino.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_cloud.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_history_activiy.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_history_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_internal_sensor.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_location.xml" value="0.25" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_login_activty.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_ppg.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_register.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/activity_scan_device.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_cloud.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_external_sensor.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_history.xml" value="0.33" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_internal_sensor.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_scan_device.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/fragment_weather.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/rv_history.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/layout/sheet_history.xml" value="0.271875" />
+        <entry key="..\:/Users/QuadRex-IT-Solutions/Desktop/PersonalEhealth/app/src/main/res/menu/stylish_bottom_nav_menu.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/_16sdp">
 
+
     <TextView
         android:id="@+id/log"
         android:layout_width="fill_parent"
@@ -20,9 +21,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+
         android:onClick="save"
         android:text="save &amp; stop" />
 
+    <TextView
+        android:id="@+id/text_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Ecg reading"
+
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,27 +40,21 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
+
         <com.androidplot.xy.XYPlot
             android:id="@+id/plot"
             style="@style/APDefacto.Dark"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_150sdp"
+            android:layout_height="250dp"
             android:layout_marginVertical="@dimen/_10sdp"
             ap:domainTitle="time"
             ap:rangeTitle="range"
             ap:renderMode="use_background_thread"
             ap:title="ECG" />
 
-        <com.androidplot.xy.XYPlot
-            android:id="@+id/plot2"
-            style="@style/APDefacto.Dark"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_below="@+id/plot"
-            ap:domainTitle="time"
-            ap:rangeTitle="range"
-            ap:renderMode="use_background_thread"
-            ap:title="PPG" />
+
+
+
     </LinearLayout>
 
 

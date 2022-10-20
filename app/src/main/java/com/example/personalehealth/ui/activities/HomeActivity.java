@@ -20,11 +20,14 @@ import com.example.personalehealth.MainActivity;
 import com.example.personalehealth.R;
 import com.example.personalehealth.utils.Utilities;
 
+
+
 public class HomeActivity extends AppCompatActivity {
 
     TextView textViewDay, textViewDate;
     int PERMISSION_ID = 44;
     Button button_internal;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,9 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+
+
 
     }
 

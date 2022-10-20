@@ -70,7 +70,7 @@ public class LocationFragment extends Fragment {
 
                     longitude = String.valueOf(gpsTracker.longitude);
                     textView2.setText(Html.fromHtml(
-                            "<font color='#ff9052'><b>Latitude :</b><br></font>"
+                            "<font color='#ff9052'><b>Longitude :</b><br></font>"
                                     +longitude
                     ));
                     Utilities.saveString(getContext(),"Longitude",longitude);
@@ -78,11 +78,11 @@ public class LocationFragment extends Fragment {
 
                     address = gpsTracker.getAddressLine(getContext());
                     textView5.setText(Html.fromHtml(
-                            "<font color='#ff9052'><b>Latitude :</b><br></font>"
+                            "<font color='#ff9052'><b>Address:</b><br></font>"
                                     +address
                     ));
 
-                    Utilities.saveString(getContext(),"Address",address);
+                    Utilities.saveString(getContext(),"address",address);
 
 
                     locality = gpsTracker.getLocality(getContext());

@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.scichart.library:extensions:3.0.0.4253@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/870b0c77be4b38851c35ea47aa033694/jetified-extensions-3.0.0.4253/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/870b0c77be4b38851c35ea47aa033694/jetified-extensions-3.0.0.4253/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/870b0c77be4b38851c35ea47aa033694/jetified-extensions-3.0.0.4253/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ba7d8434a59d2fcb13d34db931ba9a/jetified-extensions-3.0.0.4253/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ba7d8434a59d2fcb13d34db931ba9a/jetified-extensions-3.0.0.4253/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82ba7d8434a59d2fcb13d34db931ba9a/jetified-extensions-3.0.0.4253/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scichart.library/extensions/3.0.0.4253/18122b3c4e19ff024d80280c14b547738cf6249f/extensions-3.0.0.4253-javadoc.jar!/" />

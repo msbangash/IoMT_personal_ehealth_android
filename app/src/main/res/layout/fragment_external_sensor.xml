@@ -24,15 +24,29 @@
         android:layout_marginTop="@dimen/_10sdp"
         />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_reading"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_40sdp"
-        android:text="Start Reading"
         android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/ecg_btn_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="@dimen/_40sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:textColor="@color/black"
-        />
+        android:text="Start ECG Reading"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/ppg_btn_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Start PPG Reading"
+        android:textColor="@color/black" />
+    </LinearLayout>
 </RelativeLayout>

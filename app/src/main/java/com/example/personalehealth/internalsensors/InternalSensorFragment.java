@@ -36,6 +36,7 @@ public class InternalSensorFragment extends Fragment {
 
         tabLayout.addTab(tabLayout.newTab().setText("Location"));
         tabLayout.addTab(tabLayout.newTab().setText("Scan Devices"));
+
         tabLayout.addTab(tabLayout.newTab().setText("Pulse Measure"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 

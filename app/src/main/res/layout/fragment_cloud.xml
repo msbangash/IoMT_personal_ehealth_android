@@ -33,17 +33,18 @@
                 android:backgroundTint="@color/light_black"
                 android:text="Pull Data"/>
 
+
         </LinearLayout>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginVertical="@dimen/_10sdp"
-        android:layout_marginHorizontal="@dimen/_40sdp"
-        android:text="Save Patient Data"
-        android:textColor="@color/black"
-        android:id="@+id/saveToLocal"/>
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginVertical="@dimen/_10sdp"-->
+<!--        android:layout_marginHorizontal="@dimen/_40sdp"-->
+<!--        android:text="Save Patient Data"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:id="@+id/saveToLocal"/>-->
 
 </RelativeLayout>
