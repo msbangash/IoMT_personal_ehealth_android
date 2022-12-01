@@ -1,2 +1,11 @@
-# IoMT_personal_ehealth_android
-Creating a Personal Medical Record (PMR) through context-aware means
+# SMARTPHONE AS AN EDGE FOR CONTEXT-AWARE REAL-TIME PROCESSING FOR PERSONAL E-HEALTH
+The medical domain is facing an ongoing challenge of how patients can share their health information and timeline with healthcare providers. This involves secure sharing, diverse data types, and formats reported by healthcare-related devices. A multilayer framework can address these challenges in the context of the Internet of Medical Things (IoMT). This framework utilizes smartphone sensors, external services, and medical devices that measure vital signs and communicate such real-time data with smartphones. The smartphone serves as an “edge device” to visualize, analyze, store, and report context-aware data to the cloud layer. Focusing on medical device connectivity, mobile security, data collection, and interoperability for frictionless data processing allows for building context-aware personal medical records (PMRs). These PMRs are then securely transmitted through a communication protocol, Message Queuing Telemetry Transport (MQTT), to be then utilized by authorized medical staff and healthcare institutions. MQTT is a lightweight, intuitive, and easy-to-use messaging protocol suitable for IoMT systems. Consequently, these PMRs are to be further processed in a cloud computing platform, Amazon Web Services (AWS). Through AWS and its services, architecting a customized data pipeline from the mobile user to the cloud allows displaying of useful analytics to healthcare stakeholders, secure storage, and SMS notifications. Our results demonstrate that this framework preserves the patient’s health-related timeline and shares this information with professionals. Through a serverless Business intelligence interactive dashboard generated from AWS QuickSight, further querying and data filtering techniques are applied to the PMRs which identify key metrics and trends. 
+
+###### Keywords: IoMT, AWS, Android, Context-aware, Personal Medical Record, Real-time
+
+#### How to Clone Android Project from GitHub in Android Studio?
+https://www.geeksforgeeks.org/how-to-clone-android-project-from-github-in-android-studio/
+
+#### SCRCPY Installation Guide for Windows and Android
+###### SCRCPY provides display and control of Android devices connected via USB or over TCP/IP. 
+https://www.youtube.com/watch?v=REEvZm_eFIk
