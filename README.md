@@ -4,8 +4,8 @@ The medical domain is facing an ongoing challenge of how patients can share thei
 ###### [Keywords: IoMT, AWS, Android, Context-aware, Personal Medical Record, Real-time]
 
 #### Publications 
-https://neiudc.neiu.edu/uhp-projects/40/
-https://neiudc.neiu.edu/cgi/viewcontent.cgi?article=1037&context=uhp-projects
+- https://neiudc.neiu.edu/uhp-projects/40/
+- https://neiudc.neiu.edu/cgi/viewcontent.cgi?article=1037&context=uhp-projects
 
 #### Recommended Citations
 Bangash, Muhammad, "Smartphone as an Edge for Context-Aware Real-Time Processing for Personal eHealth" (2022). University Honors Program Senior Projects. 40.
